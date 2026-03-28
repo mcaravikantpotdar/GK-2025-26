@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSSS Khalyani News Bulletin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loader-screen">
+        <div class="spinner"></div>
+        <h2 id="status-text">आवाज लोड हो रही है...</h2>
+        <p>कृपया प्रतीक्षा करें (Microsoft Edge का उपयोग करें)</p>
+    </div>
+
+    <div id="start-screen" style="display:none;">
+        <button id="start-btn">प्रसारण शुरू करें (Start Broadcast)</button>
+        <p style="margin-top:20px; color: #888;">GSSS Khalyani Achievement Portal</p>
+    </div>
+
+    <div id="broadcast-frame" style="display: none;">
+        <audio id="bg-music-1" loop></audio>
+        <audio id="bg-music-2" loop></audio>
+
+        <div id="media-stage">
+            </div>
+
+        <div id="overlay-top">
+            <div class="school-tag">GSSS KHALYANI NEWS</div>
+            <div id="date-tag"></div>
+        </div>
+
+        <div id="news-footer">
+            <h1 id="main-headline"></h1>
+            <ul id="bullet-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
